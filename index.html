@@ -1,0 +1,228 @@
+<!-- *          La déclaration n'est pas une balise HTML. Il s'agit d'une "information" pour le navigateur sur le type de document à attendre. -->
+<!DOCTYPE html>
+
+<!-- * <html>. Cet élément encadre tout le contenu de la page. Cet élément est parfois appelé l'élément racine. -->
+<html lang="fr">
+
+<!-- *  = head =  Définit un conteneur pour les métadonnées d'une page Web . -->
+<head>
+
+    <!-- *  Définit le codage des caractères pour toute la page Web. -->
+    <!-- * ( utf-8 ) regroupe l'ensemble des caractères connus utilisés dans les différents langages humains -->
+    <meta charset="UTF-8">
+
+    <!--  *  ( http-equiv ) Définit les méta-règles pour la page Web. -->
+    <!--  * (X-UA-Compatible )   Définit la version d'Internet Explorer avec laquelle la page Web doit être rendue. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!--  * ( name )  Définit les informations supplémentaires jointes à la page Web. -->
+  <!--  * ( viewport  ) Définit les règles de dimension et d'échelle pour la fenêtre. -->
+  <!-- * ( width=device-width, initial-scale=1.0 ) vous pouvez spécifier * la largeur et l'échelle initiale de la page Web. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boulangerie</title>
+
+   <!-- * ( link ) Définit un lien entre la page Web actuelle et un lien externe ou une ressource. -->
+  <!--  * ( href ) Définit l'URL du lien. 
+            ! ( href="https:/css/website.css" )   URL absolue .
+            ! ( href="href="/css/style..css"" )   URL relative .
+     -->
+  <!-- * ( rel ) Définit un type de lien , expliquant comment le lien se rapporte à la page Web actuelle. -->
+    <link rel="stylesheet" href="./Css/style.css">
+
+    <!-- * (rel="icon") = Le lien est un favicon. -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- * (rel="author") Le lien est le site Web de l'auteur de la page Web. -->
+    <link rel="author" href="">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+<body>
+
+    <!--  
+        ( <input type="text" name="first_name"  )  =  Fermeture automatique : Oui  
+        ( <img src="images/firefox-icon.png" alt="Mon image test" /> )  =  Fermeture automatique : Oui  
+    -->
+
+    <!--    
+         <nav>
+                            =>  Fermeture automatique : Non    
+        </nav>
+     -->
+
+     <!--
+         <p>
+
+             Mon chat est 
+
+             <strong>très</strong>              =>  Imbriquer des éléments
+
+             grincheux.
+            
+            </p>
+      -->
+        <!-- 
+            <img src="images/firefox-icon.png" alt="Mon image test" />          =>  Certains éléments n'ont pas de contenu. Ces éléments sont appelés éléments vides
+        -->
+
+        <!-- =============================================================================== -->
+
+        <!-- ==================================== NAVBAR / HEADER =============================== -->
+
+        <header data-vide-bg="./Assets/video/header.mp4">
+            <nav>
+                
+                <input type="checkbox" id="InputCheckNav" class="CacheLeCheckBox">
+
+                <!-- * ( Label )  Définit une étiquette pour un contrôle de formulaire  -->
+                <!-- * ( for )  Définit à quel contrôle l'étiquette est associée. -->
+                <label for="InputCheckNav" class="MenuBurger">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                </label>
+                <div class="logo">
+                      <a href="./index.html">
+                          <!-- * ( alt )  Texte alternatif pour décrire l'image si elle n'est pas disponible. Utilisé par les lecteurs d'écran.  -->
+                          <img src="./Assets/Image/logo.png" width="150" alt="">
+                        </a>
+                </div>
+                <div class="menuNavbar">
+                      <ul>
+                            <li><a href="./index.html">Accueil</a></li>
+                            <li><a href="./recette.html">Recette</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                </div>
+          </nav>
+            <h1 class="HeaderTitre">À Vos Recettes !</h1>
+        </header>
+<main>
+
+
+        <section id="SectionUneAccueil">
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li>&emsp;Bienvenue chez diy Cakes</li>
+                    <li>&emsp;Laissez libre cours à votre imagination</li>
+                    <li>&emsp;Créez ! </li>
+                    <li>&emsp;Amusez vous  ! </li>
+                    <li>&emsp;À Bientôt !</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="SectionDeuxAccueil">
+
+            <div class="textSectionDeuxAccueil"  data-aos="zoom-in-down">
+                <h1>Diy Cakes</h1>
+                <p>
+                    Ici retrouvez toutes vos recette préférées <br>
+                    à reproduire à refaire à la maison <br>
+                    simples et ludiques.
+                </p>
+            </div>
+            <div class="slider" data-aos="zoom-in-up">
+                <div class="load"></div>
+            </div>
+
+        </section>
+
+        <section  id="SectionTroisAccueil"></section>
+
+        <section  id="SectionQuatreAccueil">
+
+          
+                <h1 data-aos="zoom-in">Recettes</h1>
+
+                <div class="ContainerSectionQuatre">
+      
+                    <div class="ContainerImageEtInfo" data-aos="zoom-in-down">
+                        <img src="./Assets/Image/bgrecette1.jpg" width="260" alt="">
+                        <div class="ContainerText">
+                          <div class="text"><a href="./Assets/files/recette1.pdf"  target="_blank">Recette</a></div>
+                        </div>
+                    </div>
+      
+                    <div class="ContainerImageEtInfo" data-aos="zoom-in-up">
+                      <img src="./Assets/Image/bgrecette2.jpg" width="260" alt="">
+                      <div class="ContainerText">
+                        <div class="text"><a href=" ./Assets/files/recette1.pdf" target="_blank">Recette</a></div>
+                      </div>
+                  </div>
+      
+                  <div class="ContainerImageEtInfo" data-aos="zoom-in-down">
+                      <img src="./Assets/Image/bgrecette3.jpg" width="260" alt="">
+                      <div class="ContainerText">
+                        <div class="text"><a href="./Assets/files/recette1.pdf" target="_blank">Recette</a></div>
+                      </div>
+                  </div>
+      
+                  <div class="ContainerImageEtInfo" data-aos="zoom-in-up">
+                      <img src="./Assets/Image/bgrecette4.jpg" width="260" alt="">
+                      <div class="ContainerText">
+                        <div class="text"><a  href="./Assets/files/recette1.pdf" target="_blank">Recette</a></div>
+                      </div>
+                  </div>
+      
+                </div>
+                <div class="SectionQuatreContainerBtn">
+                    <a class="SectionQuatreButton" href="./recette.html" data-aos="zoom-in">  Voir plus</a>
+                </div>
+            
+        </section>
+
+
+        <section class="SectionCinqContact">
+            <div class="containerContact" data-aos="zoom-in">
+              <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                  <h2>Contactez Nous</h2>
+                  <form action="">
+                    <input type="text" class="field" placeholder="Votre Prénom">
+                    <input type="email" class="field" placeholder="Votre email">
+                    <input type="tel" class="field" placeholder="Votre phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+      
+      </section>
+
+
+
+
+    </main>
+
+
+
+   <!--  
+       <script src="https://javascript/my-scripts.js"></script> 
+
+       (src) Définit la source du script externe.
+        (src="/javascript/my-scripts.js")   L'URL peut être relative ou absolue.
+
+       <script type="text/javascript">
+             console.log('Hello World');
+        </script>
+
+        (type) Définit le type MIME du script externe.
+        (type="text/javascript" )  C'est pour .js les fichiers.
+    --> 
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/jquery.vide.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>         
